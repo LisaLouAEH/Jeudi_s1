@@ -77,7 +77,11 @@ perform
 
 #Sors moi tout les devises, dont le cours est inférieur à 6000 
 #(indice: pense bien à enlever le $ pour pouvoir faire une comparaison)
+# + le cours le plus haut ?
 def crypto_inf
+    puts "-------------------------------------------------"
+    puts "Voici toutes les crypto dont le court est inferieur a 6000 $ :"
+    puts "-------------------------------------------------"
     i = 0
     tab = []
     while i < @value.size
@@ -88,13 +92,11 @@ def crypto_inf
         end
         i += 1
     end
-    
+    puts "-------------------------------------------------"
+    puts "Le court le plus haut est a #{tab.max} $."
+    puts "-------------------------------------------------"
 end
 crypto_inf
-puts "-------------------------------------------------"
-puts "-------------------------------------------------"
-puts "-------------------------------------------------"
-
 
 
 
